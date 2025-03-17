@@ -4,6 +4,6 @@
   "url": "/api/{provincia}/departamentos/{departamento}/localidades",
   "method": "GET",
   "description": "Devuelve una lista de todas las localidades de un departamento específico",
-  "example": "https://localidades-argentinas-data.vercel.app/api/buenos_aires/departamentos/Alberti/localidades",
+  "example": "https://geoargentina-api-data.vercel.app/api/buenos_aires/departamentos/Alberti/localidades",
   "img": "./localidades-de-un-departamento.png"
 }

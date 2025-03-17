@@ -4,6 +4,6 @@
   "url": "/api/{provincia}",
   "method": "GET",
   "description": "Devuelve una Provincia específica",
-  "example": "https://localidades-argentinas-data.vercel.app/api/buenos_aires",
+  "example": "https://geoargentina-api-data.vercel.app/api/buenos_aires",
   "img": "./provincia-especifica.png"
 }

@@ -4,6 +4,6 @@
   "url": "/api/{provincia}/departamentos/{departamento}/localidades/{localidad}",
   "method": "GET",
   "description": "Devuelve información detallada de una localidad específica",
-  "example": "https://localidades-argentinas-data.vercel.app/api/buenos_aires/departamentos/Alberti/localidades/Villa_Ortíz",
+  "example": "https://gepargentina-api-data.vercel.app/api/buenos_aires/departamentos/Alberti/localidades/Villa_Ortíz",
   "img": "./localidad-específica.png"
 }

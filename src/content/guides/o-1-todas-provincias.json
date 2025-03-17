@@ -4,6 +4,6 @@
   "url": "/api/provincias",
   "method": "GET",
   "description": "Devuelve una lista de todas las Provincias",
-  "example": "https://localidades-argentinas-data.vercel.app/api/provincias",
+  "example": "https://geoargentina-api-data.vercel.app/api/provincias",
   "img": "./todas-las-provincias.png"
 }

@@ -4,6 +4,6 @@
   "url": "/api/{provincia}/departamentos",
   "method": "GET",
   "description": "Devuelve una lista de todos los departamentos de una provincia específica",
-  "example": "https://localidades-argentinas-data.vercel.app/api/buenos_aires/departamentos",
+  "example": "https://geoargentina-api-data.vercel.app/api/buenos_aires/departamentos",
   "img": "./departamentos-de-una-provincia.png"
 }
