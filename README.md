@@ -1,4 +1,4 @@
-# GeoArgentina API
+# GeoArgentina API Web
 Esta es la **Página Web** de la **API** de **Provincias**, **Departamentos** y **Localidades** de **Argentina**.<br>
 En la mísma, se muestra como utilizar la **API** para acceder a los respectivos endpoints y obtener toda la información que se requiera para implementarla en tus proyectos.
 <br>
