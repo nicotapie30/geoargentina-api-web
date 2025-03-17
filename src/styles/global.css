@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --animate-typing: typing 3s steps(30) forwards;
+  --animate-fade: fade 1s linear 2s backwards;
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+      visibility: hidden;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+---
+import imagesProvincias from '@utils/carousel/imgs-carousel'
+---
+
+<article class="article-carousel hidden md:flex">
+        <div class="carousel-container">
+            { 
+                imagesProvincias.map((images) => { 
+                    return(
+                        <div class="carousel">
+                            <img src={images.url} alt={images.name} class="img">
+                            <p>{images.name}</p>
+                        </div>
+                    )
+                })               
+            }
+        </div>
+</article>
+
+<style>
+
+    .article-carousel {
+        max-width: 85%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    .carousel-container {
+        width: calc(10rem * 46);                             
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        animation: scroll 100s linear infinite;
+    }
+
+
+    .carousel {
+        width: 10rem;
+        height: 14rem; /* Asegura espacio suficiente */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end; /* Alinea los textos al final */
+    }
+
+    img {
+        width: 100%;
+        max-height: 80%; /* Ajuste de altura */
+        object-fit: contain;
+        flex-grow: 1; /* Permite que la imagen ocupe el espacio disponible */
+        filter: drop-shadow(0px 0px 1px #000)
+    }
+
+    p {
+        margin-top: 3rem; /* Separación extra */
+        width: 6rem;
+        min-height: 1.7rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #333;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+
+        &:hover {
+            border: 1px solid gray;
+        }
+    }
+
+
+
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-10rem * 23));
+        }
+    }
+</style>

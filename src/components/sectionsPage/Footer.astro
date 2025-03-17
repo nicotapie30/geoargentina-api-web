@@ -1,0 +1,170 @@
+---
+import GithubIcon from "@icons/GithubIcon.astro";
+import InstagramIcon from "@icons/InstagramIcon.astro";
+import LinkedinIcon from "@icons/LinkedinIcon.astro";
+---
+
+<footer class="dark:bg-white bg-gray-800 footer">
+  <div class="footer-container w-full">
+      <section class="md:flex md:justify-between footer-top">
+          <div class="footer-logo">
+              <div class="flex items-center gap-2 cursor-default">
+                  <img src="/logo-nico-footer.webp" class="w-18 h-18" alt="Nicolás Logo" title="Logo Nicolás Alejandro Tapié" />
+                  <div class="flex flex-col gap-2 max-w-80">
+                    <span class="self-center text-xl font-semibold text-wrap text-white">Nicolás Alejandro Tapié</spa>
+                    <span class="self-center text-xl font-semibold text-wrap text-white">Programador</span>
+                  </div>
+                </div>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 footer-grid">
+              <div>
+                  <h2 class="text-sm font-semibold dark:text-gray-900 uppercase text-white">Recursos</h2>
+                  <ul class="dark:text-gray-600 text-gray-400">
+                      <li><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank" class="underline-from-left transition-all">Wikipedia</a></li>
+                      <li><a href="https://www.citypopulation.de/" target="_blank" class="underline-from-left transition-all text-nowrap">City Population</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="text-sm font-semibold dark:text-gray-900 uppercase text-white">Contacto</h2>
+                  <ul class="dark:text-gray-600 text-gray-400">
+                      <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicoatapie@gmail.com" class="underline-from-left transition-all" target="_blank" title="Email" aria-label="Enviar correo electrónico a Nicolás">Email</a></li>
+                      <li><a href="https://www.linkedin.com/in/nicolasatapiedev30" class="underline-from-left transition-all" target="_blank" title="Linkedin" aria-label="Ir a Linkedin de Nicolás">Linkedin</a></li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+      <hr class="dark:border-gray-200 border-gray-700 footer-divider" />
+      <section class="sm:flex sm:items-center sm:justify-between footer-bottom">
+          <span class="text-sm dark:text-gray-500 sm:text-center text-gray-400">
+              © 2025 <a href="https://https://www.linkedin.com/in/nicolasatapiedev30" class="underline-from-left transition-all" target="_blank" aria-label="Ir a Linkedin de Nicolás">Nicolás Alejandro Tapié</a>. Todos los derechos reservados
+          </span>
+          <div class="flex sm:justify-center">
+            <div class="brand w-auto hover:bg-gray-500/10 rounded-full flex items-center justify-center">
+              <a href="#" class="text-gray-500 dark:hover:text-gray-900 hover:text-white" title="Linkedin" aria-label="Ir a Linkedin de Nicolás">
+                  <LinkedinIcon />
+              </a>
+            </div>
+            <div class="brand w-auto hover:bg-gray-500/10 rounded-full flex items-center justify-center">
+              <a href="#" class="text-gray-500 dark:hover:text-gray-900 hover:text-white" title="Repositorio" aria-label="Ir a repositorio de Github">
+                  <GithubIcon />
+              </a>
+            </div>
+            <div class="brand w-auto hover:bg-gray-500/10 rounded-full flex items-center justify-center">
+              <a href="#" class="text-gray-500 dark:hover:text-gray-900 hover:text-white" title="Instagram" aria-label="Ir a instagram de Nicolás">
+                  <InstagramIcon />
+              </a>
+            </div>
+          </div>
+      </section>
+  </div>
+</footer>
+
+
+
+<style>
+ .footer {
+    padding: 16px;
+}
+
+.footer-container {
+    padding: 24px;
+}
+
+.footer-logo {
+    margin-bottom: 24px;
+}
+
+.footer-grid {
+    gap: 24px;
+}
+
+.footer-divider {
+    margin: 24px 0;
+}
+
+.footer-bottom {
+    margin-top: 16px;
+}
+
+.underline-from-left {
+      background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+      background-size: 0% 1px;
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+    }
+
+    .underline-from-left:hover {
+      background-size: 100% 1px;
+    }
+
+.brand {
+  padding: 0.5rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 640px) { /* sm */
+    .footer {
+        padding: 24px;
+    }
+
+    .footer-container {
+        padding: 32px;
+    }
+
+    .footer-grid {
+        gap: 32px;
+    }
+
+    .footer-divider {
+        margin: 32px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width: 768px) { /* md */
+    .footer-container {
+        padding: 40px;
+    }
+
+    .footer-logo {
+        margin-bottom: 0; /* Ajuste para md */
+    }
+
+    .footer-grid {
+        gap: 40px;
+    }
+
+    .footer-divider {
+        margin: 40px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1024px) { /* lg */
+    .footer-container {
+        padding: 48px;
+    }
+
+    .footer-grid {
+        gap: 48px;
+    }
+
+    .footer-divider {
+        margin: 48px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+}
+
+
+
+</style>

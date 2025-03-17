@@ -1,0 +1,27 @@
+const imagesProvincias = [
+  { id: 1, name: "Buenos Aires", url: "/buenosaires.webp" },
+  { id: 2, name: "Catamarca", url: "/catamarca.webp" },
+  { id: 3, name: "Chaco", url: "/chaco.webp" },
+  { id: 4, name: "Chubut", url: "/chubut.webp" },
+  { id: 5, name: "Córdoba", url: "/cordoba.webp" },
+  { id: 6, name: "Corrientes", url: "/corrientes.webp" },
+  { id: 7, name: "Entre Ríos", url: "/entre-rios.webp" },
+  { id: 8, name: "Formosa", url: "/formosa.webp" },
+  { id: 9, name: "Jujuy", url: "/jujuy.webp" },
+  { id: 10, name: "La Pampa", url: "/la-pampa.webp" },
+  { id: 11, name: "La Rioja", url: "/la-rioja.webp" },
+  { id: 12, name: "Mendoza", url: "/mendoza.webp" },
+  { id: 13, name: "Misiones", url: "/misiones.webp" },
+  { id: 14, name: "Neuquén", url: "/neuquen.webp" },
+  { id: 15, name: "Río Negro", url: "/rio-negro.webp" },
+  { id: 16, name: "Salta", url: "/salta.webp" },
+  { id: 17, name: "San Juan", url: "/san-juan.webp" },
+  { id: 18, name: "San Luis", url: "/san-luis.webp" },
+  { id: 19, name: "Santa Cruz", url: "/santa-cruz.webp" },
+  { id: 20, name: "Santa Fe", url: "/santa-fe.webp" },
+  { id: 21, name: "Santiago del Estero", url: "/santiago-del-estero.webp" },
+  { id: 22, name: "Tierra del Fuego", url: "/tierra-del-fuego.webp" },
+  { id: 23, name: "Tucumán", url: "/tucuman.webp" },
+];
+
+export default imagesProvincias;
