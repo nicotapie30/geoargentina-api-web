@@ -1,48 +1,40 @@
-# Astro Starter Kit: Basics
+# GeoArgentina API
+Esta es la **Página Web** de la **API** de **Provincias**, **Departamentos** y **Localidades** de **Argentina**.<br>
+En la mísma, se muestra como utilizar la **API** para acceder a los respectivos endpoints y obtener toda la información que se requiera para implementarla en tus proyectos.
+<br>
+<br>
+La Web, te mostrará ejemplificaciones claras y concisas con las que podrás interactuar de manera directa.
+<br>
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+## Tecnologías 📌
+<div display="inline">
+  <img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white"> 
+  <img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
+  <img src="https://img.shields.io/badge/-Tailwind%20CSS-4A5568?style=flat&logo=tailwindcss&logoColor=white">
+  <img src="https://img.shields.io/badge/-Astro-8B008B?style=flat&logo=astro&logoColor=white">
+  <img src="https://img.shields.io/badge/-React-0088CC?style=flat&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/-Vercel-black?style=flat&logo=vercel&logoColor=white">
+  <img src="https://img.shields.io/badge/-Vite-FF4500?style=flat&logo=vite&logoColor=white">
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+</div>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
+**Muchas Gracias por utilizar la API y mostrar interes en ella!**
+<br>
+<br>
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+**Visitá la Web oficial para obtener más información: <a href="https://localidades-argentinas.vercel.app/" target="_blank">GeoArgentina API</a>**
+<br>
+<br>
 
-## 🚀 Project Structure
+**Te agradecería si quieres dar apoyo y marcar con una ⭐ el repositorio. Eres más que bienvenido a realizar cualquier tipo de cambio para que el proyecto crezca y mejore!**
+<br>
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### No dudes en contactarme
+- **LinkedIn:** 👉​<a href="https://www.linkedin.com/in/nicolasatapiedev30" target="_blank">LinkedIn</a>
+- **Instagram:** 👉​<a href="https://www.instagram.com/nicotapie1/" target="_blank">Instagram</a>
+<br>
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<p align="center" style="font-size: 1.5em; font-weight: bold;"><b>Un fuerte abrazo ❤️</b></p>
