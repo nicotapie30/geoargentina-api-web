@@ -1,6 +1,14 @@
 ---
 import ButtonRouter from "@components/ButtonRouter.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
+
+const pathname = Astro.url.pathname
+const isOnPathname = pathname.includes('examples')
+
+const href = isOnPathname ? '/' : '/examples'
+const title = isOnPathname ? 'Ir al inicio' : 'Ejemplos de uso con distintos lenguajes'
+const ariaLabel = isOnPathname ? 'Ir al inicio' : 'Ejemplos de uso con distintos lenguajes'
+const content = isOnPathname ? 'Inicio' : 'Lenguajes'
 ---
 
 <header id="startPage" class="w-full h-12 flex justify-between items-center">
@@ -19,14 +27,30 @@ import GithubIcon from "@icons/GithubIcon.astro";
         </div>
     </article>
     <article class="flex flex-col sm:flex sm:flex-row items-center gap-4">
+        {       
+            href === '/' 
+             ? ''
+             :
+                 <div 
+                    id="button-router" 
+                    class="w-14 h-8 lg:w-16 lg:h-10 flex items-center justify-center shadow-md rounded-md border-[1px] border-transparent hover:border-slate-800 bg-slate-800/90 hover:bg-white/40 text-white hover:text-slate-800 transition-all cursor-pointer"
+                    >
+       
+            
+                    <ButtonRouter href="#guide" title="Guía" aria-label="Ir a sección de guías">
+                        Guía
+                    </ButtonRouter>
+                </div>
+        } 
         <div 
-        id="button-router" 
-        class="w-14 h-8 lg:w-16 lg:h-10 flex items-center justify-center shadow-md rounded-md border-[1px] border-transparent hover:border-slate-800 bg-slate-800/90 hover:bg-white/40 text-white hover:text-slate-800 transition-all cursor-pointer"
-        >
-            <ButtonRouter href="#guide" title="Guía" aria-label="Ir a sección de guías">
-                Guía
-            </ButtonRouter>
-        </div>   
+            id="button-router" 
+            class="w-20 h-8 lg:w-24 lg:h-10 flex items-center justify-center shadow-md rounded-md border-[1px] border-transparent hover:border-slate-800 bg-slate-800/90 hover:bg-white/40 text-white hover:text-slate-800 transition-all cursor-pointer"
+            >
+         
+            <ButtonRouter href={href} title={title} aria-label={ariaLabel}>
+                {content}
+            </ButtonRouter>                       
+    </div>  
         <div 
         id="button-router-icon"
         class="w-14 h-8 lg:w-16 lg:h-10 flex items-center justify-center shadow-md rounded-md border-[1px] border-transparent hover:border-slate-800 bg-slate-800/90 hover:bg-white/40 text-white hover:text-slate-800 transition-all cursor-pointer"

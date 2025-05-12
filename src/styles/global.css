@@ -1,10 +1,12 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
+@import "@fontsource-variable/fira-code";
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   --animate-typing: typing 3s steps(30) forwards;
   --animate-fade: fade 1s linear 2s backwards;
+  --font-family-code: "Fira Code Variable";
 
   @keyframes typing {
     0% {

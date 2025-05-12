@@ -11,7 +11,8 @@
       "@styles/*": ["styles/*"],
       "@icons/*": ["icons/*"],
       "@utils/*": ["utils/*"],
-      "@content/*": ["content/*"]
+      "@content/*": ["content/*"],
+      "@public/*": ["public/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
