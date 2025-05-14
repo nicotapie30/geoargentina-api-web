@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
+@plugin "@midudev/tailwind-animations";
 @import "@fontsource-variable/fira-code";
 @custom-variant dark (&:is(.dark *));
 

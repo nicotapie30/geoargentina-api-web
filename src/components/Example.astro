@@ -1,15 +1,24 @@
 ---
-const { lang, src, alt } =  Astro.props
----
+import { CopyButton } from "./CopyButton"
+import CopyIcon from "@icons/CopyIcon"
 
-<article class="w-[50%] h-auto p-4 bg-white rounded-lg shadow-lg flex flex-col  gap-2">
-    <div class="flex gap-2 items-center justify-start">
-        <img src={src} alt={alt} class="w-6 h-6">
-        <h5 class="text-gray-800 font-bold text-xl">{lang}</h5>
+const { lang, src, code } =  Astro.props
+---
+<article class="w-full 2xl:w-[60%] h-auto bg-white flex flex-col p-2 rounded-lg shadow-lg gap-2 hover:scale-105 transition-transform duration-300 animate-fade-in">
+    <div class="flex items-center gap-2">
+        <img src={src} alt={lang} class="w-8 h-8">
+        <h4 class="text-xl text-gray-800">
+        {lang} 
+        </h4>
     </div>
-    <div class="w-full h-full bg-gray-900 rounded-lg shadow-md">
-        <code class="font-family-code text-white">
-            ejemplo aca de codigo
-        </code>
+    <div class="relative">
+        <pre class="bg-gray-900 rounded-lg w-full h-full text-white text-xs xl:text-base font-family-code overflow-x-scroll sm:overflow-hidden">
+            <slot />
+        </pre>
+        <div class="absolute bottom-5 right-3">
+            <CopyButton text={code} client:load>
+                <CopyIcon />
+            </CopyButton>
+        </div>
     </div>
 </article>
