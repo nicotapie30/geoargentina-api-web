@@ -27,7 +27,7 @@ const orderedGuides = guides.sort((a, b) => a.data.id - b.data.id)
 
             <div class="self-end 2xl:block hidden">
               {
-                id % 2 === 0 ? <img src="/arrowLeft.svg" class="arrow w-[30rem] h-[30rem] initial-right" /> : ''
+                id % 2 === 0 ? <img src="/icons/arrowLeft.svg" class="arrow w-[30rem] h-[30rem] initial-right" /> : ''
               }
             </div>
             
@@ -88,7 +88,7 @@ const orderedGuides = guides.sort((a, b) => a.data.id - b.data.id)
             
             <div class="self-end 2xl:block  hidden">
               {
-                id % 2 != 0 && id != 5 ? <img src="/arrowRight.svg" class="arrow w-[30rem] h-[30rem] "/> : ''
+                id % 2 != 0 && id != 5 ? <img src="/icons/arrowRight.svg" class="arrow w-[30rem] h-[30rem] "/> : ''
               }
             </div>
           </section>
