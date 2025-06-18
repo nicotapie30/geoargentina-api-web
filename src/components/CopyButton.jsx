@@ -1,4 +1,4 @@
-import { Toaster, toast } from "sonner";
+import { toast } from "sonner";
 import copy from "clipboard-copy";
 import CopyIcon from "@icons/CopyIcon";
 
@@ -10,7 +10,6 @@ export function CopyButton({ text }) {
 
   return (
     <div>
-      <Toaster richColors position="bottom-right" />
       <button
         onClick={handleCopy}
         className="group w-7 h-7 bg-slate-800 hover:bg-slate-800/80  flex items-center justify-center cursor-pointer rounded-sm transition-all"

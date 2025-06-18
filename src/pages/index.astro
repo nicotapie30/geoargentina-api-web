@@ -1,4 +1,5 @@
 ---
+import { CustomToaster } from '@components/Toaster.jsx';
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/sectionsPage/Hero.astro';
 import Guide from '@components/sectionsPage/Guide.astro';
@@ -11,6 +12,8 @@ import DownArrow from '@icons/DownArrow.astro';
         <Hero />
 
         <Carousel />
+
+        <CustomToaster client:load/>
 
         <DownArrow />
 
